@@ -1,4 +1,5 @@
 const wdio = require("webdriverio");
+const assert = require("assert");
 
 const opts = {
   path: '/wd/hub',
@@ -6,7 +7,7 @@ const opts = {
   capabilities: {
     platformName: "Android",
     platformVersion: "11",
-    deviceName: "RF8MC07NEJL",
+    deviceName: "emulator-5554",
     app: "/Users/dickdijk/_Study/Appium/sample/ApiDemos-debug.apk",
     appPackage: "io.appium.android.apis",
     appActivity: ".view.TextFields",
