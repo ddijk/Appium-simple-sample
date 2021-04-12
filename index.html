@@ -1,0 +1,24 @@
+<html>
+<body>
+<div>
+<div><label for='x'><input id='x' type='text' name='x'></div>
+<div><label for='y'><input id='y' type='text' name='y'></div>
+<div><input id='knop' type='button' value='sum'></div>
+<div id='result'></div>
+</div>
+<script type='text/javascript'>
+
+    const addup = () => {
+
+        const valX = Number(document.getElementById('x').value);
+        const valY = Number(document.getElementById('y').value);
+
+        console.log(`x = ${valX}, y = ${valY}, sum is ${valX+valY}`);
+
+        // document.getElementById('result').removeChild();
+        document.getElementById('result').innerHTML = (valX+valY) ;
+    };
+    document.getElementById('knop').addEventListener('click', ()=> {console.log('klik it'); addup();});
+</script>
+</body>
+</html>

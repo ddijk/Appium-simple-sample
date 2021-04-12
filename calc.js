@@ -11,7 +11,7 @@ const opts = {
   }
 };
 
-async function main () {
+async function test () {
   const client = await wdio.remote(opts);
 
   await client.navigateTo('http://localhost:8080');
@@ -28,4 +28,4 @@ async function main () {
   await client.deleteSession();
 }
 
-main();
+test();
